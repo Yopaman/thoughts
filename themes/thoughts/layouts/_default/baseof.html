@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<html lang="en">
+  <head>
+    <title>{{ .Title }}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{ $style := resources.Get "sass/style.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  </head>
+  <body>
+    {{ block "header" . }}
+        <header>
+            <a href="/" class="title"> {{ .Site.Title }} </a>
+        </header>
+    {{ end }}
+    {{ block "main" . }}
+
+    {{ end }}
+  </body>
 </html>

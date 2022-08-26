@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <main>
+        <div class="article-header">
+            <h2 class="article-title">
+                {{ .Title }}
+            </h2>
+            <p class="article-date">Last modification: {{ .Lastmod | time.Format ":date_short" }}</p>
+        </div>
+        <hr>
+        <div class="article-content">
+            {{ .Content }}
+        </div>
+    </main>
+{{ end }}
