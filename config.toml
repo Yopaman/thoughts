@@ -1,0 +1,4 @@
+baseURL = 'https://thoughts.yopa.dev/'
+languageCode = 'fr-fr'
+title = 'Thoughts'
+theme = 'thoughts'

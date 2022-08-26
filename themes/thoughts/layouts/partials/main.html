@@ -1,0 +1,24 @@
+<main>
+    <div class="content">
+        <div class="root">
+            <img class="root-icon" src="/icons/directory.svg">
+            <h5 class="root-title">Home</h5>
+        </div>
+
+        {{ $pages := .Site.RegularPages }}
+        {{ $len := len $pages }}
+		{{ range $i, $e := $pages }}
+            <div class="article-home">
+                
+                {{ if eq (add $i 1) $len }}
+                    <img class="tree tree-end" src="/icons/tree-end.svg">
+                {{ else }}
+                    <img class="tree tree-mid" src="/icons/tree-mid.svg">
+                {{ end }}
+                <img class="article-icon" src="/icons/file.svg">
+                <a class="article-filename" href={{ .Permalink }}>{{ .File.LogicalName }}</a>
+            </div>
+        {{ end }}
+
+    </div>
+</main>
