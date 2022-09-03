@@ -13,8 +13,13 @@
             <a href="/" class="title"> {{ .Site.Title }} </a>
         </header>
     {{ end }}
+
     {{ block "main" . }}
 
+    {{ end }}
+
+    {{ block "footer" . }}
+        <a class="info" href="/info"><img src="/icons/info.svg"></a>
     {{ end }}
   </body>
 </html>

@@ -3,6 +3,9 @@ languageCode = 'fr-fr'
 title = 'Thoughts'
 theme = 'thoughts'
 
+[params]
+    dateFormat = "02/01/2006"
+
 [markup]
   [markup.highlight]
     anchorLineNos = false

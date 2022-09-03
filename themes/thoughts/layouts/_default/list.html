@@ -6,7 +6,7 @@
                 <p class="root-title">Home</p>
             </div>
 
-            {{ $pages := .Site.RegularPages }}
+            {{ $pages := where .Site.RegularPages ".Params.unlisted" false }}
             {{ $len := len $pages }}
             {{ range $i, $e := $pages }}
                 <div class="article-home">
