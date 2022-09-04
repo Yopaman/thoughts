@@ -8,17 +8,24 @@ unlisted: false
 List good or underrated albums/songs.
 
 
-### Albums / EPs
+## Albums / EPs
+
+#### Hip Hop
 
 - Tyler the Creator - Igor
 - Tyler the Creator - Flower Boy
 - JPEGMAFIA - LP! (OFFLINE)
 - Kendrick Lamar - Good Kid, M.A.A.D. City
 - Death Grips - The Money Store
-- Death Grips - Year Of The Snitch  
+- Death Grips - Year Of The Snitch
+
+#### Breakcore
+
 - goreshit - semantic compositions on death and its meaning
 
-### Songs
+## Songs
+
+#### Hyperpop
 
 - SyKo - #BrooklyBloodPop!
 
