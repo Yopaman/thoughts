@@ -25,6 +25,12 @@ $gray2:       #C3BAC6;
 $white:       #D9E0EE;
 
 
+@mixin media-max($_max-width) {
+    @media screen and (max-width: $_max-width) {
+        &{ @content; }
+    }
+}
+
 // Reset
 
 body {
@@ -176,6 +182,9 @@ main {
 .article-content {
     font-size: 1.1em;
     width: 60%;
+    @include media-max(600px) {
+        width: 90%;
+    }
     padding-top: 20px;
 }
 
@@ -193,8 +202,3 @@ hr {
     right: 0;
 }
 
-@media only screen and (max-width: 600px) {
-    .article-content {
-        width: 90%;
-    }
-  }
