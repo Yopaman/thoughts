@@ -192,3 +192,9 @@ hr {
     bottom: 0;
     right: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .article-content {
+        width: 90%;
+    }
+  }
