@@ -7,8 +7,6 @@ unlisted: false
 
 *Explication sur le lore de Minecraft que j'ai écrit dans les notes de mon téléphone à 3h du matin. La qualité d'écriture est désastreuse mais c'est plutôt cohérent.*
 
-------
-
 Dans le passé, le monde de Minecraft se composait de 3 couches :
 
 - L'Overworld où vivent des micro-civilisations, avec des pillards, des marchands etc...
